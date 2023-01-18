@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.loginbtn > button {
+  width: 150px;
+  padding: 13px;
+  background-color: teal;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.input > input {
+  width: 700px;
+  padding: 12px;
+}
+.logo > img {
+  width: 200px;
+}
+.cartlogo > img {
+  width: 70px;
+}
+hr {
+  margin-top: 10px;
+  border: 1px solid rgb(222, 220, 220);
+}
+.navbar2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 84%;
+  margin: auto;
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.navbar2 p {
+  font-size: 16px;
+  color: rgb(72, 72, 72);
+}
+.dropdown1 > p:nth-child(1) {
+  border: 1px solid rgb(211, 208, 208);
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* DropDown menu */
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 1200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 15px;
+}
+.dropdown-content1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  width: 100%;
+}
+.dropdown-content1 > div {
+  margin-top: 10px;
+}
+.dropdown-content1 > div p {
+  text-align: left;
+  margin-top: 10px;
+}
+.dropdown-content1 > div:nth-child(1) {
+  background-color: rgb(229, 246, 203);
+  padding: 20px;
+  height: auto;
+}
+.dropdown-content p:hover {
+  color: teal;
+}
+.dropdown1:hover .dropdown-content {
+  display: block;
+}
+
+/* Drop Down 2 */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content2>div{
+  display: flex;
+  gap:30px;
+  text-align: left;
+}
+.dropdown-content2 div>p{
+  text-align: left;
+}
+.dropdown-content23{
+  display: grid;
+  background-color: rgb(212, 237, 176);
+  padding: 10px;
+}
+.dropdown-content234>p{
+  margin-top: 10px;
+}
+.dropdown-content2 p:hover {
+  color: teal;
+}
+.dropdown-content23 p:hover {
+  color: teal;
+
+}
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+/* Dropdown css */
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 20px;
+}
+
+.dropdown-content3>div>img {
+  width: 100%;
+}
+.dropdown-content3>div{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.dropdown-content3 img:hover {background-color: #b17171}
+
+.dropdown3:hover .dropdown-content3 {
+  display: block;
+}
+
+
+
+
+/*  Next Drop Down Third*/
+.Deals {
+  display: flex;
+  gap: 10px;
+}
+.Deals > div > img {
+  width: 100%;
+  height: 50px;
+}
+.dropdown4 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown4 > div {
+  padding: 20px;
+}
+
+.dropdown-content4 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content4 > div > h3 {
+  text-align: left;
+}
+.dropdown-content4 > div {
+  margin-top: 10px;
+}
+.dropdown-content4 p:hover {
+  color: teal;
+}
+
+.dropdown4:hover .dropdown-content4 {
+  display: block;
+}
+
+/*  Next Drop Down last*/
+
+.dropdown7 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content7 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content7 > div {
+  padding: 10px;
+  margin-top: 10px;
+}
+.dropdown-content3 {
+  min-width: 300px;
+}
+.support1 > p {
+  text-align: left;
+  /* margin-top: 10px; */
+  padding: 10px;
+}
+.support2 > p {
+  background-color: rgb(238, 235, 235);
+  padding: 5px;
+}
+.support2 > p:nth-child(2) {
+  font-size: 22px;
+}
+.dropdown-content7 p:hover {
+  color: teal;
+}
+
+.dropdown7:hover .dropdown-content7 {
+  display: block;
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .loginbtn > button {
+    width: 100px;
+    padding: 13px;
+    color: white;
+    border-radius: 5px;
+  }
+  .input > input {
+    width: 300px;
+    padding: 12px;
+  }
+  .logo > img {
+    width: 120px;
+  }
+  .cartlogo > img {
+    width: 50px;
+  }
+  .navbar2 {
+    margin: auto;
+    margin-top: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar2 p {
+    color: rgb(72, 72, 72);
+    text-align: center;
+    font-size: 13px;
+  }
+  .dropdown1 > p:nth-child(1) {
+    width: 150px;
+  }
+  .dropdown-content3 {
+    min-width: 200px;
+  }
+  /* Dropdown 1  */
+  .Dropdownunder {
+    display: none;
+  }
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    gap: 20px;
+    min-width: 600px;
+  }
+/* Dropdown 2 */
+.dropdown-content2 {
+  min-width: 300px;
+
+}
+
+
+
+
+  /* Drop Down 4 */
+
+  .dropdown-content4 {
+    min-width: 200px;
+  }
+
+  /* Next DropDown */
+
+  .dropdown-content7 {
+    min-width: 200px;
+  }
+  .support1 > p {
+    text-align: left;
+    margin-top: 10px;
+    padding: 0;
+  }
+  .support2 > p:nth-child(2) {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .loginbtn > button {
+    width: 80px;
+    padding: 13px;
+    color: white;
+    border-radius: 5px;
+  }
+  .input > input {
+    width: 80px;
+    padding: 12px;
+  }
+  .logo > img {
+    width: 120px;
+  }
+  .cartlogo > img {
+    width: 50px;
+  }
+  .navbar2 p {
+    color: rgb(72, 72, 72);
+    text-align: center;
+    font-size: 10px;
+  }
+  /* dropdown */
+  .dropdown-content {
+    gap: 20px;
+    min-width: 400px;
+  }
+
+  /* Next DropDown */
+
+  .dropdown-content7 {
+    min-width: 150px;
+  }
+  .support1 > p {
+    text-align: left;
+    margin-top: 10px;
+  }
+}

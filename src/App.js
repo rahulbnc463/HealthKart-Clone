@@ -8,7 +8,7 @@ function App() {
         <h1>This is Our Logo</h1>
       <h1>Just demo Test</h1>
        <img src={logo} alt="logo" />   
-       {/* <Dashboard/>  */}
+       
     </div>
   );
 }

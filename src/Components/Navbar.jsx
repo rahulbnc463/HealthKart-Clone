@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { login, Logout } from "../Redux/AuthReducer/action";
 import LoginPopup from "./LoginPopup";
 
@@ -113,7 +113,7 @@ const Navbar = () => {
           <div className="dropdown-content">
             <div className="dropdown-content1">
               <div>
-                <p>Sports Nutrition &gt;</p>
+                <p >Sports Nutrition &gt;</p>
                 <p>Vitamins & Supplements &gt;</p>
                 <p>Ayurveda & Herbs &gt;</p>
                 <p>Health Food & Drinks &gt;</p>
@@ -123,7 +123,7 @@ const Navbar = () => {
               <div>
                 <p>Proteins</p>
                 <br />
-                <p>Whey Protiens</p>
+                <Link to="/health/:id"><p>Whey Protiens</p></Link>
                 <p>Beginners Whey Protein</p>
                 <p>Whey Protein Isolate</p>
                 <p>Raw Whey Proteins</p>

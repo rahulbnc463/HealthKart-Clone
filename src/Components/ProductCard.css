@@ -1,0 +1,61 @@
+
+
+.Product{
+    border-radius: 20px;
+    height: auto;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* border: 2px solid orange; */
+}
+
+
+.productimage>img{
+    width: 100%;
+
+}
+.productdesc{
+    display: grid;
+    font-size: 16px;
+    width: 100%;
+    /* border: 2px solid orange; */
+}
+.productdesc>p:nth-child(2){
+    color: red;
+}
+.probtn{
+    height: 30%;
+}
+.probtn button{
+    width: 180px;
+    padding:10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.probtn button:hover{
+    background-color: orange;
+    color: white;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.price>p:nth-child(2){
+    text-decoration: line-through;
+}
+.price>p:nth-child(3){
+    color: green;
+}
+
+@media screen and (max-width: 1080px) {
+
+}
+@media screen and (max-width: 780px) {
+
+}

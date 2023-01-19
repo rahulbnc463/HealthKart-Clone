@@ -32,6 +32,7 @@ main>button {
 .input > input {
   width: 700px;
   padding: 12px;
+  border: 1px solid black;
 }
 .logo > img {
   width: 200px;
@@ -307,13 +308,12 @@ hr {
   text-align: left;
 }
 .forminput>input{
-  width: 250px;
+  width: 300px;
   margin-top: 5px;
+  border:1px solid red;
   padding:10px;
   border-radius: 20px;
 }
-
-
 
 @media screen and (max-width: 1080px) {
   .navbar {

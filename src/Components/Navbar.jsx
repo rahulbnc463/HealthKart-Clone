@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import { login, Logout } from "../Redux/AuthReducer/action";
@@ -58,8 +58,14 @@ const Navbar = () => {
                       src="https://static1.hkrtcdn.com/hknext/static/media/login/slider/1.svg"
                       alt="Logo"
                     />
-                    <h4>Wide Range of Original & Authentic <br /> Nutritional Products</h4>
-                    <p>We Strive to Provide 100% Authentic <br /> Products to our Customer</p>
+                    <h4>
+                      Wide Range of Original & Authentic <br /> Nutritional
+                      Products
+                    </h4>
+                    <p>
+                      We Strive to Provide 100% Authentic <br /> Products to our
+                      Customer
+                    </p>
                   </div>
                 </div>
                 <div className="Signup">
@@ -104,7 +110,7 @@ const Navbar = () => {
       <div className="navbar2">
         <div className="dropdown1">
           <p>Shop By Category</p>
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <div className="dropdown-content1">
               <div>
                 <p>Sports Nutrition &gt;</p>
@@ -293,7 +299,7 @@ const Navbar = () => {
         </div>
         <div className="dropdown7">
           <p>customer Support</p>
-          <div class="dropdown-content7">
+          <div className="dropdown-content7">
             <div className="support1">
               <p>Chat with us</p>
               <p>Email us</p>

@@ -21,10 +21,9 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
-
- export default function Navbar() {
+export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -60,7 +59,7 @@ import { NavLink } from "react-router-dom";
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-           Logo
+            Logo
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -74,7 +73,7 @@ import { NavLink } from "react-router-dom";
           direction={"row"}
           spacing={6}
         >
-          <Link  to="/adminsignin" id="RouterNavLink" >
+          <Link to="/adminsignin" id="RouterNavLink">
             {" "}
             <Button
               as={"a"}
@@ -86,7 +85,7 @@ import { NavLink } from "react-router-dom";
               Sign In
             </Button>{" "}
           </Link>
-          <Link  to="adminsignup" id="RouterNavLink" >
+          <Link to="adminsignup" id="RouterNavLink">
             <Button
               display={{ base: "none", md: "inline-flex" }}
               fontSize={"sm"}
@@ -272,5 +271,3 @@ const NAV_ITEMS = [
     label: "Product List",
   },
 ];
-
-

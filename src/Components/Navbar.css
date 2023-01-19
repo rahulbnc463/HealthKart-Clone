@@ -12,14 +12,22 @@
   margin-top: 20px;
   cursor: pointer;
 }
-.loginbtn > button {
-  width: 150px;
+main>button {
+  width: 130px;
   padding: 13px;
   background-color: teal;
   border: none;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+}
+.logout{
+  cursor: pointer;
+  padding: 13px;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 10px;
 }
 .input > input {
   width: 700px;
@@ -251,6 +259,62 @@ hr {
   display: block;
 }
 
+/* Login CSS */
+.Loginform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: auto;
+  width: 100%;
+}
+.Caraousel>div{
+  display: grid;
+  width: 100%;
+  padding: 10px;
+
+}
+.Caraousel>div>h4{
+  margin: 20px;
+}
+.Caraousel>div>img{
+  width: 100%;
+  
+}
+.Loginform>div{
+  display: grid;
+  
+}
+.Signup>p{
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.Signup button{
+  width: 200px;
+  margin-top: 25px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.Signup button:hover{
+  background-color: green;
+  color: white;
+}
+.forminput>p{
+  margin-top: 15px;
+  text-align: left;
+}
+.forminput>input{
+  width: 250px;
+  margin-top: 5px;
+  padding:10px;
+  border-radius: 20px;
+}
+
+
+
 @media screen and (max-width: 1080px) {
   .navbar {
     margin: auto;
@@ -307,8 +371,6 @@ hr {
 }
 
 
-
-
   /* Drop Down 4 */
 
   .dropdown-content4 {
@@ -328,6 +390,15 @@ hr {
   .support2 > p:nth-child(2) {
     font-size: 15px;
   }
+
+  /* Login  */
+  .forminput>input{
+    width: 180px;
+  }
+  .Signup button{
+    width: 100px;
+  }
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -366,5 +437,11 @@ hr {
   .support1 > p {
     text-align: left;
     margin-top: 10px;
+  }
+  .Caraousel>div>h4{
+    font-size: 12px;
+  }
+  .Caraousel>div>p{
+    font-size: 10px;
   }
 }

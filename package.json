@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@chakra-ui/core": "^0.8.0",
+=======
+>>>>>>> main
     "@chakra-ui/icons": "^2.0.16",
     "@chakra-ui/react": "^2.4.9",
     "@emotion/core": "^11.0.0",
@@ -17,7 +20,12 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
     "emotion-theming": "^11.0.0",
+<<<<<<< HEAD
     "framer-motion": "^8.4.7",
+=======
+    "firebase": "^9.15.0",
+    "framer-motion": "^8.4.6",
+>>>>>>> main
     "json-server": "^0.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

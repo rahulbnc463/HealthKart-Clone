@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
+// import { useNavigate } from "react-router-dom";
 import {
   LoginWrapper,
   PopupInner,
@@ -22,6 +22,7 @@ const LoginPopup = (props) => {
           <img
             src="https://icons.veryicon.com/png/o/miscellaneous/development-platform/wrong-14.png"
             width="20"
+            alt="imagelogo"
           />
         </ClosedPopup>
         {props.children}

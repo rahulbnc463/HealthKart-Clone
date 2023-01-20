@@ -1,7 +1,11 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../Redux/CartReducer/reducer";
 import "./ProductCard.css";
 
 export const ProductCard = ({ shoeId }) => {
+  const dispatch = useDispatch();
+  const { title, price, image, id } = shoeId;
   return (
     <div className="Product">
       <div className="productimage">
@@ -17,7 +21,14 @@ export const ProductCard = ({ shoeId }) => {
         </div>
       </div>
       <div className="probtn">
-        <button>Add To Cart</button>
+        <button
+          onClick={() => {
+            dispatch(addToCart({ id, title, image, price }));
+            
+          }}
+        >
+          Add To Cart
+        </button>
       </div>
     </div>
   );

@@ -1,22 +1,25 @@
 
 
 .Product{
+    display: grid;
     border-radius: 20px;
     height: auto;
-    padding: 10px;
+    padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     /* border: 2px solid orange; */
+    cursor: pointer;
 }
-
+.Product:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 .productimage>img{
     width: 100%;
-
 }
 .productdesc{
     display: grid;
     font-size: 16px;
-    width: 100%;
+    width: 80%;
     /* border: 2px solid orange; */
 }
 .productdesc>p:nth-child(2){
@@ -26,7 +29,7 @@
     height: 30%;
 }
 .probtn button{
-    width: 180px;
+    width: 200px;
     padding:10px;
     margin-top: 10px;
     border-radius: 5px;

@@ -45,7 +45,7 @@ const AddProduct = () => {
       detail: details,
     };
 
-    let res = await axios.post("http://localhost:8080/Health", product);
+    let res = await axios.post("https://healthcartapi.onrender.com/Health", product);
     console.log(res.data);
 
     setLoading(false);

@@ -28,7 +28,7 @@ const GetShoesDataFailure = () => {
 export const getHealth = (param) => (dispatch) => {
   dispatch(GetShoesDataRequest());
   axios
-    .get(`http://localhost:8080/Health`, param)
+    .get(`https://healthcartapi.onrender.com/Health`, param)
     .then((res) => {
       dispatch(GetShoesDataSuccess(res.data));
     })
@@ -39,5 +39,5 @@ export const getHealth = (param) => (dispatch) => {
 
 
 export const FetchProduct = (query) => {
-  return axios.get(`http://localhost:8080/Health?q=${query}`)
+  return axios.get(`https://healthcartapi.onrender.com/Health?q=${query}`)
 }

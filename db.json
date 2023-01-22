@@ -289,42 +289,6 @@
       "detail": "3 interest free payments of ₹199.68 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500i"
     },
     {
-      "id": 25,
-      "image": "https://img3.hkrtcdn.com/22246/prd_2224522-Neuherbs-Deep-Sea-Fish-Oil-60-softgels_o.jpg",
-      "title": "Neuherbs Deep Sea Fish Oil, 60 softgels",
-      "category": "omega",
-      "option": "",
-      "available": true,
-      "price": "₹749",
-      "oldprice": "₹1,099",
-      "discount": "31% off",
-      "detail": "3 interest free payments of ₹199.68 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500i"
-    },
-    {
-      "id": 26,
-      "image": "https://img9.hkrtcdn.com/22819/prd_2281858-TrueBasics-Multivitamin-60-tablets-Unflavoured_o.jpg",
-      "title": "TrueBasics Multivitamin, 60 tablet(s)",
-      "category": "multivitamins",
-      "option": "",
-      "available": true,
-      "price": "₹699",
-      "oldprice": "₹799",
-      "discount": "12% off",
-      "detail": "3 interest free payments of ₹233 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500"
-    },
-    {
-      "id": 27,
-      "image": "https://img5.hkrtcdn.com/20887/prd_2088674-MuscleBlaze-Biozyme-Daily-Multivitamin-90-tablets-Unflavoured_o.jpg",
-      "title": "MuscleBlaze Biozyme Daily Multivitamin, 90 tablet(s)",
-      "category": "multivitamins",
-      "option": "",
-      "available": true,
-      "price": "₹899",
-      "oldprice": "₹1,299",
-      "discount": "30% off",
-      "detail": "3 interest free payments of ₹233 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500"
-    },
-    {
       "id": 28,
       "image": "https://img7.hkrtcdn.com/18640/prd_1863916-MuscleBlaze-MBVITE-Multivitamin-for-Immunity100-RDA-of-Vit-C-D-Zinc-60-tablets-Unflavoured_o.jpg",
       "title": "MuscleBlaze MB-VITE Daily Multivitamin, for Enhanced Energy, Stamina & Gut Health, 60 tablet(s)",
@@ -1213,42 +1177,6 @@
       "detail": "3 interest free payments of ₹499.68 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500i"
     },
     {
-      "id": 102,
-      "image": "https://img3.hkrtcdn.com/16707/prd_1670622-MuscleXP-Classic-XP-Stainless-Steel-Shaker-Blender-Blue-750-ml_o.jpg",
-      "title": "MuscleXP Classic XP Stainless Steel Shaker Blender, 750 ml, Blue",
-      "category": "fitness",
-      "option": "",
-      "available": true,
-      "price": "₹1,245",
-      "oldprice": "₹1,115",
-      "discount": "26% off",
-      "detail": "3 interest free payments of ₹499.68 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500i"
-    },
-    {
-      "id": 103,
-      "image": "https://img3.hkrtcdn.com/16707/prd_1670622-MuscleXP-Classic-XP-Stainless-Steel-Shaker-Blender-Blue-750-ml_o.jpg",
-      "title": "MuscleXP Classic XP Stainless Steel Shaker Blender, 750 ml, Blue",
-      "category": "fitness",
-      "option": "",
-      "available": true,
-      "price": "₹1,245",
-      "oldprice": "₹1,115",
-      "discount": "26% off",
-      "detail": "3 interest free payments of ₹499.68 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500i"
-    },
-    {
-      "id": 104,
-      "image": "https://img3.hkrtcdn.com/16707/prd_1670622-MuscleXP-Classic-XP-Stainless-Steel-Shaker-Blender-Blue-750-ml_o.jpg",
-      "title": "MuscleXP Classic XP Stainless Steel Shaker Blender, 750 ml, Blue",
-      "category": "fitness",
-      "option": "",
-      "available": true,
-      "price": "₹1,245",
-      "oldprice": "₹1,115",
-      "discount": "26% off",
-      "detail": "3 interest free payments of ₹499.68 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500i"
-    },
-    {
       "id": 105,
       "image": "https://img4.hkrtcdn.com/14073/prd_1407223-Fitinc-Cotton-Double-Strip-Designed-Trackpant-with-Both-Side-Zipper-Navy-Blue-Medium_o.jpg",
       "title": "Fitinc Cotton Double Strip Designed Trackpant with Both Side Zipper, Medium, Navy Blue",
@@ -1271,6 +1199,16 @@
       "oldprice": "₹1,115",
       "discount": "26% off",
       "detail": "3 interest free payments of ₹499.68 with Pay using Simpl on HealthKart and get 5% cashback up to Rs 500i"
+    },
+    {
+      "image": "data:image/jpeg;base64,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",
+      "title": "ffsalkfja",
+      "category": "omega",
+      "price": "5354",
+      "oldprice": "₹",
+      "originalPrice": "1221",
+      "detail": "jrgjsd",
+      "id": 107
     }
   ]
 }

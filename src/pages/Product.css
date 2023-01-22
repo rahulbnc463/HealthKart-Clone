@@ -23,8 +23,10 @@
 
   margin-top: 20px;
 }
+
 .Header1{
   display: grid;
+  align-items: flex-start;
   width: 20%;
 
 }

@@ -3,11 +3,11 @@
     margin-top: 30px;
 }
 
-input{
+.Searchbox input{
     outline: none;
     width: 600px;
-    font-size: 25px;
-    padding: 25px;
+    font-size: 15px;
+    padding: 10px;
     border-bottom: 1px solid red;
 }
 .Searchbox button{
@@ -25,7 +25,7 @@ input{
 }
 
 @media only screen and (max-width: 860px) {
-    input{
+    .Searchbox input{
         width: 300px;
     }
     .Searchbox button{

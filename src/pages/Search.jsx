@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import "./Product.css";
 import './Search.css'
 import { ProductCard } from "../Components/ProductCard";
 import { FetchProduct } from "../Redux/ProductReducer/action";
+import Navbar from "../Components/Navbar";
 
 const Search = () => {
   const [query, setQuery] = useState("");
@@ -39,6 +39,7 @@ const Search = () => {
   let slicedData = data?.slice(0, elem);
   return (
     <div className="Searchbox">
+      <Navbar />
       <form onClick={handleSearch}>
         <input
           type="text"

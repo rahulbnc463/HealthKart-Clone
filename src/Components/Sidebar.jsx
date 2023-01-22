@@ -29,7 +29,7 @@ const Sidebar = () => {
   return (
     <div >
       <h2 style={{fontWeight:"bold",fontSize:"15px"}}>Category</h2>
-      <div style={{display:"flex",width:"100%",marginTop:"10px"}}>
+      <div style={{display:"flex",width:"100%"}}>
         <input
           type="checkbox"
           value="proteins"

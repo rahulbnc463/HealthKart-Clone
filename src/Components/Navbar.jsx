@@ -135,13 +135,13 @@ const Navbar = () => {
               <div>
                 <p>Proteins</p>
                 <br />
-                <Link to="/health">
-                  <p>Whey Protiens</p>
-                </Link>
-                <p>Beginners Whey Protein</p>
-                <p>Whey Protein Isolate</p>
-                <p>Raw Whey Proteins</p>
-                <p>Plant Proteins</p>
+                
+                  <p onClick={() => navigate("/health")}>Whey Protiens</p>
+                
+                <p onClick={() => navigate("/health")}>Beginners Whey Protein</p>
+                <p onClick={() => navigate("/health")}>Whey Protein Isolate</p>
+                <p onClick={() => navigate("/health")}>Raw Whey Proteins</p>
+                <p onClick={() => navigate("/health")}>Plant Proteins</p>
                 <p>Protein for Women</p>
                 <p>Protein for Blends</p>
                 <p>Casein Proteins</p>
@@ -228,26 +228,32 @@ const Navbar = () => {
               <img
                 src="https://img6.hkrtcdn.com/8846/bnr_884565_o.png"
                 alt=""
+                onClick={() => navigate("/health")}
               />
               <img
                 src="https://img10.hkrtcdn.com/8846/bnr_884579_o.png"
                 alt=""
+                onClick={() => navigate("/health")}
               />
               <img
                 src="https://img10.hkrtcdn.com/8846/bnr_884569_o.png"
                 alt=""
+                onClick={() => navigate("/health")}
               />
               <img
                 src="https://img10.hkrtcdn.com/10848/bnr_1084799_o.png"
                 alt=""
+                onClick={() => navigate("/health")}
               />
               <img
                 src="https://img2.hkrtcdn.com/8846/bnr_884581_o.png"
                 alt=""
+                onClick={() => navigate("/health")}
               />
               <img
                 src="https://img8.hkrtcdn.com/8846/bnr_884587_o.png"
                 alt=""
+                onClick={() => navigate("/health")}
               />
               <img
                 src="https://img2.hkrtcdn.com/10849/bnr_1084801_o.png"
@@ -271,6 +277,7 @@ const Navbar = () => {
                 <img
                   src="https://img5.hkrtcdn.com/20091/smn_image_2009054_o.png"
                   alt=""
+                  onClick={() => navigate("/health")}
                 />
                 <p>Flash Sale</p>
               </div>
@@ -278,6 +285,7 @@ const Navbar = () => {
                 <img
                   src="https://img3.hkrtcdn.com/20091/smn_image_2009062_o.png"
                   alt=""
+                  onClick={() => navigate("/health")}
                 />
                 <p>Clearance Sale</p>
               </div>
@@ -285,6 +293,7 @@ const Navbar = () => {
                 <img
                   src="https://img7.hkrtcdn.com/20091/smn_image_2009056_o.png"
                   alt=""
+                  onClick={() => navigate("/health")}
                 />
                 <p>Under RS2999</p>
               </div>
@@ -292,6 +301,7 @@ const Navbar = () => {
                 <img
                   src="https://img9.hkrtcdn.com/20091/smn_image_2009058_o.png"
                   alt=""
+                  onClick={() => navigate("/health")}
                 />
                 <p>Under RS1999</p>
               </div>
@@ -299,17 +309,18 @@ const Navbar = () => {
                 <img
                   src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/crazy.svg"
                   alt=""
+                  onClick={() => navigate("/health")}
                 />
                 <p>Crazy Deals</p>
               </div>
             </div>
           </div>
         </div>
-        <div>
+        <div> 
           <p>Blogs</p>
         </div>
         <div>
-          <p>Gift Card</p>
+          <p onClick={() => navigate('/dashboard')}>Gift Card</p>
         </div>
         <div className="dropdown7">
           <p>customer Support</p>

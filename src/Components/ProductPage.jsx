@@ -66,8 +66,6 @@ const ProdWrap = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
   gap: 30px;
   margin-top: 40px;
-  /* border: 1px solid black; */
-
 `;
 
 export default ProductPage;

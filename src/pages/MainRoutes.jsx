@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Cart from "./Cart";
 import Product from "./Product";
+import Search from './Search'
 
 const MainRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const MainRoutes = () => {
         <Route path="/health" element={
         <Product />
         }/>
+        <Route path="/search" element={<Search />} />
       </Routes>
     </div>
   );

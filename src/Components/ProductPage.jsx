@@ -1,12 +1,11 @@
 import React from "react";
 import { useEffect } from "react";
-import { getHealth } from "../Redux/ProductReducer/action";
+import { FetchProduct, getHealth } from "../Redux/ProductReducer/action";
 import { useDispatch, useSelector } from "react-redux";
 import { ProductCard } from "./ProductCard";
 import styled from "styled-components";
 import { useLocation, useSearchParams } from "react-router-dom";
 import { useState } from "react";
-import { background } from "@chakra-ui/react";
 
 const ProductPage = () => {
   const dispatch = useDispatch();
@@ -24,6 +23,7 @@ const ProductPage = () => {
       }
     }
     dispatch(getHealth(paramObj));
+
   }, [location.search]);
 
   const loadMore = () => {

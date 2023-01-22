@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Image
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -21,9 +22,9 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
+export default function AdminNav() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -54,13 +55,9 @@ export default function Navbar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
+          <img src="Logo/logo.png" alt="HealthKart" />
+            
+         
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -73,33 +70,20 @@ export default function Navbar() {
           direction={"row"}
           spacing={6}
         >
-          <Link to="/adminsignin" id="RouterNavLink">
-            {" "}
-            <Button
-              as={"a"}
-              fontSize={"sm"}
-              fontWeight={400}
-              variant={"link"}
-              href={"#"}
-            >
-              Sign In
-            </Button>{" "}
-          </Link>
-          <Link to="adminsignup" id="RouterNavLink">
-            <Button
-              display={{ base: "none", md: "inline-flex" }}
-              fontSize={"sm"}
-              fontWeight={600}
-              color={"white"}
-              bg={"pink.400"}
-              href={"#"}
-              _hover={{
-                bg: "pink.300",
-              }}
-            >
-              Sign Up
-            </Button>
-          </Link>
+         
+          <Button
+            display={{ base: "none", md: "inline-flex" }}
+            fontSize={"sm"}
+            fontWeight={600}
+            color={"white"}
+            bg={"pink.400"}
+            href={"#"}
+            _hover={{
+              bg: "pink.300",
+            }}
+          >
+            Sign Up
+          </Button>
         </Stack>
       </Flex>
 
@@ -121,9 +105,9 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Link
+              <NavLink to={navItem.path}
                 p={2}
-                href={navItem.href ?? "#"}
+              
                 fontSize={"sm"}
                 fontWeight={500}
                 color={linkColor}
@@ -133,7 +117,7 @@ const DesktopNav = () => {
                 }}
               >
                 {navItem.label}
-              </Link>
+              </NavLink>
             </PopoverTrigger>
 
             {navItem.children && (
@@ -265,9 +249,21 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Home",
+    label: "Dashboard",
+    path: "/dashboard",
   },
   {
-    label: "Product List",
+    label: "Orders",
+    path: "/dashboard/orders",
   },
+
+  {
+    label: "Add Product",
+    path: "/dashboard/add-product",
+  },
+  {
+    label: "All Product",
+    path: "/dashboard/all-product",
+  },
+  
 ];

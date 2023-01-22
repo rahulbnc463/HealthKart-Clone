@@ -4,6 +4,9 @@ import Home from "./Home";
 import Cart from "./Cart";
 import Product from "./Product";
 import Search from './Search'
+import Dashboard from "../Admin/Dashboard";
+import AllProduct from "../Admin/AllProduct";
+import AddProduct from "../Admin/AddProduct";
 
 const MainRoutes = () => {
   return (
@@ -14,7 +17,13 @@ const MainRoutes = () => {
         <Route path="/health" element={
         <Product />
         }/>
+
         <Route path="/search" element={<Search />} />
+
+        <Route path="/dashboard" element={<Dashboard/>}></Route>
+        <Route path="dashboard/all-product" element={<AllProduct />}></Route>
+        <Route path="dashboard/add-product" element={<AddProduct />}></Route>
+
       </Routes>
     </div>
   );

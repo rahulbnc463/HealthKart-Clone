@@ -1,6 +1,11 @@
+
 import React from "react";
 import { useSelector } from "react-redux";
 import CartItem from "../Components/CartItem";
+
+
+import Navbar from '../Components/Navbar'
+
 
 const Cart = () => {
   const cart = useSelector((store) => store.cartReducer.cart);
@@ -8,6 +13,7 @@ const Cart = () => {
   
   return (
     <div>
+      <Navbar />
       <h3>Shopping Cart</h3>
       {cart?.map((item) => (
         <CartItem
@@ -23,5 +29,8 @@ const Cart = () => {
     </div>
   );
 };
+
+
+
 
 export default Cart;

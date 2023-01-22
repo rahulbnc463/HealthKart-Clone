@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
 import ProductPage from "../Components/ProductPage";
 import Sidebar from "../Components/Sidebar";
 
@@ -6,6 +7,10 @@ import "./Product.css";
 
 const Product = () => {
   return (
+    <>
+    
+    <Navbar />
+    
     <div className="productpage">
       <p>Home &gt; Sports Nutrition &gt; Proteins &gt; WheyProteins</p>
       <div className="Header">
@@ -21,6 +26,7 @@ const Product = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

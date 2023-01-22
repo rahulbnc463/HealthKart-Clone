@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
+
 import MainRoutes from "./pages/MainRoutes";
 
 // import logo from "./Images/logo.png";
@@ -9,7 +9,6 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      
       <MainRoutes />
 
       {/* <h1>This is Our Logo</h1>

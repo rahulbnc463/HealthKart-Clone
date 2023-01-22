@@ -14,12 +14,14 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import AdminNav from "./AdminNav";
 
 const AddProduct = () => {
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
   const [details, setDetails] = useState("");
   const [price, setPrice] = useState("");
+  const [originalPrice, setOriginalPrice] = useState("");
   const [category, setCategory] = useState("");
   const [loading, setLoading] = useState(false);
   const toast = useToast();
@@ -39,6 +41,7 @@ const AddProduct = () => {
       title: title,
       category: category,
       price:"₹",price,
+      oldprice:"₹",originalPrice,
       detail: details,
     };
 
@@ -52,6 +55,8 @@ const AddProduct = () => {
   };
 
   return (
+    <>
+    <AdminNav/>
     <section>
       {loading ? (
         <h4>Loading......</h4>
@@ -98,6 +103,15 @@ const AddProduct = () => {
                 />
               </FormControl>
               <FormControl className="form_group">
+                <FormLabel> Product Original Price </FormLabel>
+                <Input
+                  type="number"
+                  placeholder="Product Original Price"
+                  value={originalPrice}
+                  onChange={(e) => setOriginalPrice(e.target.value)}
+                />
+              </FormControl>
+              <FormControl className="form_group">
                 <FormLabel>Product Category</FormLabel>
                 <Select
                   placeholder="Select Category"
@@ -125,6 +139,7 @@ const AddProduct = () => {
         </Box>
       )}
     </section>
+    </>
   );
 };
 

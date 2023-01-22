@@ -123,7 +123,7 @@ const Navbar = () => {
               <div>
                 <p>Proteins</p>
                 <br />
-                <Link to="/health/:id"><p>Whey Protiens</p></Link>
+                <Link to="/health"><p>Whey Protiens</p></Link>
                 <p>Beginners Whey Protein</p>
                 <p>Whey Protein Isolate</p>
                 <p>Raw Whey Proteins</p>

@@ -71,19 +71,7 @@ export default function AdminNav() {
           spacing={6}
         >
          
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"pink.400"}
-            href={"#"}
-            _hover={{
-              bg: "pink.300",
-            }}
-          >
-            Sign Up
-          </Button>
+          
         </Stack>
       </Flex>
 
@@ -252,10 +240,7 @@ const NAV_ITEMS = [
     label: "Dashboard",
     path: "/dashboard",
   },
-  {
-    label: "Orders",
-    path: "/dashboard/orders",
-  },
+
 
   {
     label: "Add Product",

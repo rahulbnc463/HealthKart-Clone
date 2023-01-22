@@ -1,22 +1,23 @@
-import React from 'react'
+import React from "react";
 import "./AllProduct.css";
+const Pagination = ({ totalPost, postPerPage,setCurrentPage,currentPage }) => {
+  let pages = [];
 
-const Pagination = ({productPerPage,totalProduct,paginate}) => {
-const pageNumbers = [];
-
-for(let i=1;i<=Math.ceil(totalProduct / productPerPage);i++){
- pageNumbers.push(i)
-}
+  for (let i = 1; i <= Math.ceil(totalPost / postPerPage); i++) {
+    pages.push(i);
+  }
 
   return (
-    <nav>
-        <ul className='pagination' >
-            {pageNumbers.map((number)=>{
-                return <li key={number} className='page_item' ><a onClick={() => paginate(number)} href="!#"></a>{number}</li>
-            })}
-        </ul>
-    </nav>
-  )
-}
+    <div className="pagination">
+      {pages.map((page, index) => {
+        return (
+          <button  key={index} onClick={()=>setCurrentPage(page)} className={page==currentPage ? 'active' : ''}  >
+            {page}
+          </button>
+        );
+      })}
+    </div>
+  );
+};
 
-export default Pagination
+export default Pagination;

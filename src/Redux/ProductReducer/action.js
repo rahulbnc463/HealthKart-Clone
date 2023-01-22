@@ -31,9 +31,13 @@ export const getHealth = (param) => (dispatch) => {
     .get(`http://localhost:8080/Health`, param)
     .then((res) => {
       dispatch(GetShoesDataSuccess(res.data));
-      console.log(res.data);
     })
     .catch((err) => {
       dispatch(GetShoesDataFailure());
     });
 };
+
+
+export const FetchProduct = (query) => {
+  return axios.get(`http://localhost:8080/Health?q=${query}`)
+}

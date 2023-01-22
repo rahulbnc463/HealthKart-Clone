@@ -29,7 +29,7 @@ main>button {
   color: white;
   border-radius: 10px;
 }
-.input > input {
+.input input {
   width: 700px;
   padding: 12px;
   border: 1px solid black;
@@ -326,7 +326,7 @@ hr {
     color: white;
     border-radius: 5px;
   }
-  .input > input {
+  .input input {
     width: 300px;
     padding: 12px;
   }
@@ -408,7 +408,7 @@ hr {
     color: white;
     border-radius: 5px;
   }
-  .input > input {
+  .input input {
     width: 80px;
     padding: 12px;
   }

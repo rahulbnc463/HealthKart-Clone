@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { login, Logout } from "../Redux/AuthReducer/action";
+import { FetchProduct } from "../Redux/ProductReducer/action";
 import LoginPopup from "./LoginPopup";
 
 import "./Navbar.css";
@@ -27,10 +28,15 @@ const Navbar = () => {
     dispatch(Logout());
   };
 
+
+
+
   return (
     <div>
+      
       <div className="navbar">
         <div className="logo">
+        
           <img
             onClick={() => navigate(`/`)}
             src="https://img2.hkrtcdn.com/src/main/webapp/assets/images/logoNew.svg"
@@ -38,7 +44,13 @@ const Navbar = () => {
           />
         </div>
         <div className="input">
-          <input placeholder="Search for products & brands" />
+          <form>
+            <input
+              placeholder="Search for products & brands"
+              onClick={() => navigate('/Search')}
+            />
+            {/* <button>search</button> */}
+          </form>
         </div>
         {isAuth && (
           <button className="logout" onClick={handleLogout}>
@@ -113,7 +125,7 @@ const Navbar = () => {
           <div className="dropdown-content">
             <div className="dropdown-content1">
               <div>
-                <p >Sports Nutrition &gt;</p>
+                <p>Sports Nutrition &gt;</p>
                 <p>Vitamins & Supplements &gt;</p>
                 <p>Ayurveda & Herbs &gt;</p>
                 <p>Health Food & Drinks &gt;</p>
@@ -123,7 +135,9 @@ const Navbar = () => {
               <div>
                 <p>Proteins</p>
                 <br />
-                <Link to="/health/:id"><p>Whey Protiens</p></Link>
+                <Link to="/health">
+                  <p>Whey Protiens</p>
+                </Link>
                 <p>Beginners Whey Protein</p>
                 <p>Whey Protein Isolate</p>
                 <p>Raw Whey Proteins</p>

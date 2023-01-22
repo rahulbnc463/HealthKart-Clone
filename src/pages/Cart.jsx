@@ -1,13 +1,36 @@
-import React from 'react'
+
+import React from "react";
+import { useSelector } from "react-redux";
+import CartItem from "../Components/CartItem";
+
+
 import Navbar from '../Components/Navbar'
 
+
 const Cart = () => {
+  const cart = useSelector((store) => store.cartReducer.cart);
+  console.log(cart)
+  
   return (
     <div>
-   <Navbar />
-   cart
+      <Navbar />
+      <h3>Shopping Cart</h3>
+      {cart?.map((item) => (
+        <CartItem
+          key={item.id}
+          id={item.id}
+          image={item.image}
+          title={item.title}
+          price={item.price}
+          quantity={item.quantity}
+          discount={item.discount}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Cart
+
+
+
+export default Cart;

@@ -1,0 +1,36 @@
+
+.Searchbox{
+    margin-top: 30px;
+}
+
+input{
+    outline: none;
+    width: 600px;
+    font-size: 25px;
+    padding: 25px;
+    border-bottom: 1px solid red;
+}
+.Searchbox button{
+    width: 200px;
+    background-color: teal;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+}
+.Searchbox button:hover{
+    background-color: green;
+    color: white;
+}
+
+@media only screen and (max-width: 860px) {
+    input{
+        width: 300px;
+    }
+    .Searchbox button{
+        width: 100px;
+        padding: 5px;
+    }
+
+}

@@ -5,7 +5,7 @@ Clone of HealthKart a shopping website for Medicine where you can find all lates
 Deployed Link -> https://hunky-advertisement-4799.netlify.app/
 
 # Team Members
-1.Rahul Das 
+1.Rahul Deb 
 2.Rohit Rajput
 3.Ranjan Kumar
 

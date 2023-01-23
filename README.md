@@ -13,10 +13,10 @@ Axios
 
 # Some Snippets of the Project
 
+![Screenshot (14)](https://user-images.githubusercontent.com/112858493/213980224-5505b73b-668d-441a-a85b-a79157deac3e.png)
 
-![Scree![Screenshot (14)](https://user-images.githubusercontent.com/112858493/213979814-2d9aa7cc-98f3-4191-aca4-680636c64c1a.png)
-nshot (20)](https://user-images.githubusercontent.com/112858493/213979786-3054b74d-2a3e-4582-9843-b7b7e085b295.png)
-![Screenshot (19)](https://user-images.githubusercontent.com/112858493/213979805-15c94861-c9e3-4fc7-b610-12d1c4368aef.png)
-![Screenshot (15)](https://user-images.githubusercontent.com/112858493/213979819-66398046-bcb4-43fd-8891-0a8e604caa5a.png)
-![Screenshot (16)](https://user-images.githubusercontent.com/112858493/213979827-0d4af5fd-4693-4740-b315-2e251624ed3a.png)
-![Screenshot (17)](https://user-images.githubusercontent.com/112858493/213979832-9da194cd-6870-493a-81df-7875b61f43b4.png)
+
+![Screenshot (15)](https://user-images.githubusercontent.com/112858493/213980228-7fabce3f-3265-493c-8af0-378a7f9be76c.png)
+![Screenshot (16)](https://user-images.githubusercontent.com/112858493/213980231-210cb82c-33fc-4343-a4ce-42bfeb409446.png)
+![Screenshot (19)](https://user-images.githubusercontent.com/112858493/213980234-30168c09-9987-427d-9e81-934696233648.png)
+![Screenshot (20)](https://user-images.githubusercontent.com/112858493/213980237-e13ecc71-d560-474c-8df4-249f42e822c8.png)

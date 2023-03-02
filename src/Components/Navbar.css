@@ -401,7 +401,7 @@ hr {
 
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   .loginbtn > button {
     width: 80px;
     padding: 13px;
@@ -422,6 +422,44 @@ hr {
     color: rgb(72, 72, 72);
     text-align: center;
     font-size: 10px;
+  }
+  /* dropdown */
+  .dropdown-content {
+    gap: 20px;
+    min-width: 400px;
+  }
+
+  /* Next DropDown */
+
+  .dropdown-content7 {
+    min-width: 150px;
+  }
+  .support1 > p {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .Caraousel>div>h4{
+    font-size: 12px;
+  }
+  .Caraousel>div>p{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .loginbtn button {
+    display: none;
+  }
+  .input input {
+    display: none;
+  }
+  .logo > img {
+    width: 100px;
+  }
+  .cartlogo > img {
+    width: 50px;
+  }
+  .navbar2 p {
+    display: none;
   }
   /* dropdown */
   .dropdown-content {

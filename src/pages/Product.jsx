@@ -8,9 +8,7 @@ import "./Product.css";
 const Product = () => {
   return (
     <>
-    
     <Navbar />
-    
     <div className="productpage">
       <p>Home &gt; Sports Nutrition &gt; Proteins &gt; WheyProteins</p>
       <div className="Header">

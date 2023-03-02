@@ -1,11 +1,36 @@
+import { useToast } from "@chakra-ui/react";
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../Redux/CartReducer/reducer";
 import "./ProductCard.css";
 
 export const ProductCard = ({ shoeId }) => {
   const dispatch = useDispatch();
+  const toast = useToast()
   const { title, price, image, id } = shoeId;
+  const isAuth = useSelector((store) => store.authReducer.isAuth);
+
+  const handleAddToCart = () => {
+    if(isAuth){
+      dispatch(addToCart({ id, title, image, price }));
+      toast({
+        title: 'Cart',
+        description: "Product Added sucessfully",
+        status: 'success',
+        duration: 9000,
+        isClosable: true,
+      })
+    }
+    // else{
+    //   toast({
+    //     title: 'Cart',
+    //     description: "Please Login First",
+    //     status: 'Error',
+    //     duration: 9000,
+    //     isClosable: true,
+    //   })
+    // }
+  }
   return (
     <div className="Product">
       <div className="productimage">
@@ -22,10 +47,8 @@ export const ProductCard = ({ shoeId }) => {
       </div>
       <div className="probtn">
         <button
-          onClick={() => {
-            dispatch(addToCart({ id, title, image, price }));
-            
-          }}
+          onClick={handleAddToCart}
+
         >
           Add To Cart
         </button>

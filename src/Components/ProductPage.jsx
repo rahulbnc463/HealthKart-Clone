@@ -15,7 +15,6 @@ const ProductPage = () => {
   const location = useLocation();
 
 
-
   useEffect(() => {
     let paramObj= {
       params:{

@@ -1,3 +1,4 @@
+import { useToast } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -12,6 +13,7 @@ const Navbar = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const [buttonPopup, setButtonPopup] = useState(false);
+  const toast = useToast()
   const dispatch = useDispatch();
   const location = useLocation();
   const isAuth = useSelector((store) => store.authReducer.isAuth);
@@ -22,11 +24,40 @@ const Navbar = () => {
     dispatch(login(userData)).then(() => {
       navigate(location.state, { replace: true });
     });
+    toast({
+      title: 'Account created.',
+      description: "Login Successfully",
+      status: 'success',
+      duration: 5000,
+      isClosable: true,
+    })
   };
 
   const handleLogout = () => {
     dispatch(Logout());
+    toast({
+      title: 'Account created.',
+      description: "Logout Successfully",
+      status: 'success',
+      duration: 2000,
+      isClosable: true,
+    })
+    navigate('/')
   };
+
+  const handleCart = () => {
+    if(isAuth){
+      navigate('/cart')
+    }else{
+      toast({
+        title: 'Login First',
+        description: "Please Login first",
+        status: 'success',
+        duration: 2000,
+        isClosable: true,
+      })
+    }
+  }
 
 
 
@@ -112,7 +143,7 @@ const Navbar = () => {
         </div>
         <div className="cartlogo">
           <img
-            onClick={() => navigate(`/cart`)}
+            onClick={handleCart}
             src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-png-image-download-pngm-2.png"
             alt=""
           />
